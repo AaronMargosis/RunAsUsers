@@ -10,6 +10,8 @@ RunAsUsers provides options to treat the input command line as a PowerShell comm
 
 RunAsUsers is a 32-bit executable. Its default behavior on 64-bit Windows is to _disable_ WOW64 file system redirection when processing the command line, so if a Windows executable is specified, it will be the one in System32 rather than in SysWOW64. RunAsUsers offers a command-line switch not to disable that redirection, favoring the execution of Windows 32-bit executables.
 
+The file(s) specified in the command line must be in a location that is readable/executable by users. It is strongly recommended that the file(s) not also be modifiable by non-admin users.
+
 RunAsUsers is a standalone command-line executable written in C++ with no DLL or framework dependencies.
 
 <br>
